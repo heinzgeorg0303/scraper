@@ -1,0 +1,27 @@
+<h1>Top Sites</h1>
+
+<%= link_to 'Fetch from Alexa', fetch_sites_path, method: :post, class: 'btn btn-primary', data: {confirm: 'Are you sure?'} %>
+<%= link_to 'New Site', new_site_path, remote: true, class: 'btn btn-success' %>
+<br>
+<br>
+
+<table id="top-sites" class="display responsive no-wrap" >
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Url</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="site-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
